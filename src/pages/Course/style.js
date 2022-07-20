@@ -1,12 +1,15 @@
 import styled from "styled-components";
 
 export const Wrapper=styled.div`
+/* background-color: pink; */
+height:20rem;
       width: 18.75rem;
       /* width: 100%; */
       display: flex;
       flex-wrap: wrap;
       /* margin:0.5rem auto; */
       margin:0.5rem;
+      /* margin-bottom: 0.5rem; */
       /* margin:10px; */
     .course-flex{
         width: 8.8125rem;
@@ -18,8 +21,10 @@ export const Wrapper=styled.div`
     .course-List{
     }
     .course-Box{
+        height:7rem;
         position: relative;
         .course-Img{
+            /* height:7rem; */
             img{
                 max-height: 100%;
                 max-width: 100%;
@@ -28,7 +33,7 @@ export const Wrapper=styled.div`
         .get-Course{
             position: absolute;
             height:1.2rem;
-            bottom: 5rem;
+            bottom: 2.2rem;
             /* height:24px;
             bottom: 100px; */
             font-size:14px;

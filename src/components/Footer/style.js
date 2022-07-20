@@ -4,8 +4,9 @@ export const FooterWrapper=styled.div`
     position:fixed;
     bottom: 0;
     left:0;
-    /* width: 100%; */
-    width: 18.75rem;
+    width: 100%;
+    /* width: 18.75rem; */
+    z-index: 1000;
     /* height: 50px; */
     height: 2.5rem;
     display: flex;

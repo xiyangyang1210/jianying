@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import style from '@/assets/global-style'
 
 export const Wrapper=styled.div`
     .navbar{
@@ -30,7 +31,8 @@ export const Wrapper=styled.div`
         &.active::after
         {
             content: "";
-            background-color: #ec2e5a;
+            background-color: ${style['font-color-span-active']};
+            /* background-color: #ec2e5a; */
             width:1rem;
             height: 0.08rem;
             position: absolute;

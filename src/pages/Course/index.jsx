@@ -2,14 +2,14 @@ import React from 'react'
 import {Wrapper} from './style'
 import {Link} from 'react-router-dom'
 
-export default function Course({course}) {
+export default function Course({allCourses}) {
   return (
     <Wrapper>
         {/* <h1>超值限时抢</h1> */}
       {
-        course&&course.map(
+        allCourses&&allCourses.map(
             item=>(
-                <div className="course-flex">
+                <div className="course-flex" key={item.id}>
                     <Link
                         className='course-List'
                         to={`/coursedetail/${item.id}`}

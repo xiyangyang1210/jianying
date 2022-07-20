@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import style from '@/assets/global-style'
 
 export const Header=styled.div`
     .inphead{
@@ -8,28 +9,29 @@ export const Header=styled.div`
         /* margin: 20px 0; */
         color: #959595;
     }
-    .sousuo{
-        position:absolute;
-        top:1.6rem;
-        left: 2rem;
-        /* top:32px; */
-        /* left: 40px; */
+    .s1{
+        padding-left: 0.4rem;
+        width: 1.4rem;
+        line-height: 1.5rem;
+        border-end-start-radius: 0.6rem;
+        border-top-left-radius: 0.6rem;
+        background-color: ${style['font-color-input-active']}; 
+        /* background-color: #f3f3f3 ; */
+        /* color: ${style['font-color-active']}; */
+        .sousuo{
+            text-align: center;
+        }
     }
     .inp{
-        /* height: 2rem; */
-        /* width: 11.25rem; */
-        /* height: 40px;
-        width: 60%; */
         text-align: left;
-        /* border-radius: 1rem; */
-        /* margin-left: 1rem; */
-        /* padding: 0 2rem; */
-        /* border-radius: 20px;
-        margin-left: 20px;
-        padding: 0 40px; */
+        line-height: 1.2rem;
+        border-radius: 0.6rem;
+        border-top-left-radius: 0;
+        border-end-start-radius: 0;
         font-size:16px;
+        background-color: ${style['font-color-input-active']}; 
         /* background-color: #f3f3f3; */
-        /* border: none; */
+        border: none;
     }
     .stu{
         /* width: 25%; */

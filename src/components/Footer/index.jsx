@@ -6,7 +6,7 @@ import { isPathPartlyExisted } from '../../utils'
 
 export default function Footer() {
   const {pathname}=useLocation()
-  console.log(pathname,isPathPartlyExisted(pathname))
+  // console.log(pathname,isPathPartlyExisted(pathname))
   if (isPathPartlyExisted(pathname)) return
   return (
     <FooterWrapper>

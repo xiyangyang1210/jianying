@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
         text-align: left;
         color: #464646;
     }
-    height:43rem;
+    /* height:43rem; */
     .huan{
         margin: 1rem 0;
         /* margin: 20px 0; */
@@ -23,6 +23,7 @@ export const Wrapper = styled.div`
         justify-content: center;
         align-items: center;
         vertical-align:middle;
+        margin-bottom: 3.5rem;
     }
     .huan-huan{
         width:3.75rem;

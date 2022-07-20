@@ -35,17 +35,7 @@ export default function HomeDetailNav(){
                 }
                 </div>
             </div>
-        {/* <Biaoti/>
-        <Banner />
-        <Lists />
-        <h1>超值限时抢</h1>
-        <Course course={course}/>
-        <div className="huan">
-            <div className='huan-huan'>
-            <i className='iconfont icon-huanyihuan' style={{fontSize:"18px",lineHeight:"20px"}}></i>
-            <span>换一换</span>
-            </div>
-        </div>  */}
+        
     </Wrapper>
     )
 }

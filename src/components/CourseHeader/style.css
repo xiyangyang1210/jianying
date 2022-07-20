@@ -1,0 +1,32 @@
+.pic {
+    display: flex;
+    /* background-color: pink; */
+}
+.pic img{
+    height: 3.4rem;
+}
+.pic span{
+    /* height: 10px; */
+    text-align: center;
+}
+.pic a{
+  width: 3.75rem;
+  height: 3.5rem;
+   display: flex; /**弹性布局中，兄弟元素可以移动 */
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 0.75rem;
+margin-top: 2rem;
+ 
+}
+div.lj a{
+display: block;
+width: 3rem;
+height: 3rem;
+ display: flex; /**弹性布局中，兄弟元素可以移动 */
+flex-direction: column;
+justify-content: space-around;
+margin-left: 1rem;
+margin-top: 2rem;
+
+}

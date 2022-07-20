@@ -1,5 +1,5 @@
 import { useState, lazy } from 'react'
-import { Routes, Route, Link} from 'react-router-dom'
+import { Routes, Route, Link,Navigate} from 'react-router-dom'
 import Home from '../pages/Home'
 const Course = lazy(() => import('../pages/Course'))
 const Jianji = lazy(() => import('../pages/JianJi'))
@@ -12,15 +12,18 @@ const Tuijian = lazy(() => import('../pages/Tuijian'))
 const Zhibo = lazy(() => import('../pages/Zhibo'))
 const Jingpin = lazy(() => import('../pages/Jingpin'))
 const Coursedetail=lazy(()=>import('../pages/Coursedetail'))
+const Search=lazy(()=>import('../pages/Search'))
+const Wode=lazy(()=>import('../pages/Wode'))
 
 // Routes 不能和react-router-dom 一样
 const RoutesConfig = () => {
 
     return (
         <Routes>
-            <Route path='/' element={<Home/>}>
-                <Route path='/' element={<Jingpin/>}/>
-            </Route>
+            <Route path='/' element={<Navigate to="/home/jingpin" replace={true}/>}></Route>
+            {/* <Route path='/' element={<Home/>}>
+                <Route path='/' element={<Navigate to="/home/jingpin" replace={true}/>} />
+            </Route> */}
             <Route path='/jianji' element={<Jianji/>}></Route>
             <Route path='/tongkuan' element={<TongKuan/>}></Route>
             <Route path='/home' element={<Home/>}>
@@ -35,6 +38,8 @@ const RoutesConfig = () => {
             <Route path='/news' element={<News/>}></Route>
             <Route path='/mine' element={<Mine/>}></Route>
             <Route path='/coursedetail/:id' element={<Coursedetail/>}></Route>
+            <Route path="/search" element={<Search />} />
+            <Route path="/wode" element={<Wode />} />
         </Routes>
     )
 }

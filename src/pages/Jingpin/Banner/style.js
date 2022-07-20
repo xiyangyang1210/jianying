@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const Wrapper=styled.div`
+    /* background-color: pink; */
+    height:7rem;
     .home_info_img{
         width:17.8125rem;
         /* width:95%; */
